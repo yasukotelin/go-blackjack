@@ -27,7 +27,7 @@ var (
 )
 
 func wait() {
-	time.Sleep(1 * time.Second)
+	time.Sleep(500 * time.Millisecond)
 }
 
 func printLogo() {
