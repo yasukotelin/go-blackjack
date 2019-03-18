@@ -59,10 +59,9 @@ func main() {
 	dealer.Sayln(fmt.Sprintf("Welcome to %s", app))
 	wait()
 	fmt.Println()
-	dealer.Sayln("3 times game!")
-	dealer.Sayln("The first 2 wins will win.")
+	dealer.Sayln("Get 3 wins earlier than me!")
 	fmt.Println()
-	dealer.Ask("Are you ready? (Please pressed any key.) ")
+	dealer.Ask("Are you ready? (Please press any key.) ")
 
 	scrlib.Clear()
 
@@ -72,15 +71,15 @@ func main() {
 	case Win:
 		scrlib.Clear()
 		fmt.Println()
-		dealer.Sayln("You total win!!")
-		dealer.Sayln("Congratulation!")
+		dealer.Sayln("You totally win!!")
+		dealer.Sayln("Congratulations!")
 	case Loose:
 		scrlib.Clear()
 		fmt.Println()
-		dealer.Sayln("You total loose.")
+		dealer.Sayln("You totally loose.")
 	}
 
-	dealer.Ask("(Please pressed any key)")
+	dealer.Ask("(Please press any key)")
 	scrlib.Clear()
 }
 
@@ -113,7 +112,7 @@ func playGameTimes(times int) Result {
 			fmt.Println()
 			dealer.Sayln("just even")
 		}
-		dealer.Ask("(Please pressed any key)")
+		dealer.Ask("(Please press any key)")
 		scrlib.Clear()
 	}
 	return result
